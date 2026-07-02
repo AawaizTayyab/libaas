@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBAAS | Premium Men & Women Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+    <div class="preloader" id="preloader">
+        <div class="preloader_inner">
+            <h2 class="preloader_logo">LIBAAS</h2>
+            <div class="progress_track">
+                <div class="progress_bar" id="progressBar"></div>
+            </div>
+            <span class="progress_percent" id="progressPercent">0%</span>
+        </div>
+    </div>
+
+    <!-- ================= ANNOUNCEMENT MARQUEE ================= -->
+    <div class="marquee">
+        <div class="marquee_track">
+            <span>FLAT 30% OFF SITEWIDE</span>
+            <span>•</span>
+            <span>FREE DELIVERY ACROSS PAKISTAN</span>
+            <span>•</span>
+            <span>CASH ON DELIVERY AVAILABLE</span>
+            <span>•</span>
+            <span>FLAT 30% OFF SITEWIDE</span>
+            <span>•</span>
+            <span>FREE DELIVERY ACROSS PAKISTAN</span>
+            <span>•</span>
+            <span>CASH ON DELIVERY AVAILABLE</span>
+            <span>•</span>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navebar" id="navebar">
+        <div class="scroll_progress" id="scrollProgress"></div>
+        <div class="nav_left">
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="logo">
+                <h2>LIBAAS</h2>
+            </div>
+        </div>
+
+        <nav class="cart" id="navLinks">
+            <div class="nav_group">
+                <div class="nav_dropdown" id="menDropdown">
+                    <button class="nav_dropdown_toggle" type="button">
+                        Men
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="nav_dropdown_menu">
+                        <a href="#" data-category="Men Shirts">
+                            <span>Men Shirts</span>
+                            <small>Crisp everyday & formal fits</small>
+                        </a>
+                        <a href="#" data-category="Men Jeans">
+                            <span>Men Jeans</span>
+                            <small>Tailored denim, all sizes</small>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav_dropdown" id="womenDropdown">
+                    <button class="nav_dropdown_toggle" type="button">
+                        Women
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="nav_dropdown_menu">
+                        <a href="#" data-category="Women Shirts">
+                            <span>Women Shirts</span>
+                            <small>Everyday & occasion wear</small>
+                        </a>
+                        <a href="#" data-category="Women Jeans">
+                            <span>Women Jeans</span>
+                            <small>Comfort fit denim</small>
+                        </a>
+                        <a href="#" data-category="Women Abaya">
+                            <span>Women Abaya</span>
+                            <small>Our most loved collection</small>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#sale" class="nav_pill">Sale</a>
+            </div>
+        </nav>
+
+        <div class="mobile_search_bar" id="mobileSearchBar">
+            <input type="text" id="searchInputMobile" placeholder="Search products...">
+            <div class="search_results" id="searchResultsMobile"></div>
+        </div>
+
+        <div class="nav_right">
+            <div class="search">
+                <input type="text" id="searchInputDesktop" placeholder="Search Here...">
+                <span class="search_icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </span>
+                <div class="search_results" id="searchResultsDesktop"></div>
+            </div>
+            <div class="account_wrap">
+                <button class="account_btn" id="accountBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span id="accountLabel">Login</span>
+                </button>
+                <div class="account_dropdown" id="accountDropdown">
+                    <button id="logoutCustomerBtn">Logout</button>
+                </div>
+            </div>
+            <button class="cart_btn" id="cartBtn" aria-label="Open cart">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart_count" id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <div class="hero">
+        <div class="hero_glow"></div>
+        <div class="hero_text reveal">
+            <span class="eyebrow">Est. Multan — Since Day One</span>
+            <h1>Men &amp; Women Collections</h1>
+            <h3>FLATE 30% OFF</h3>
+            <h4>EXPERIENCE THE BIOS OF SOFT FABRICS</h4>
+            <div class="hero_actions">
+                <button class="color">Shop Now</button>
+                <a href="#" class="hero_whatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.83-3.05-.2-.31a8.22 8.22 0 1 1 6.99 3.87zm4.5-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.86.84-.86 2.04 0 1.2.88 2.37 1 2.53.12.16 1.73 2.64 4.2 3.7.59.25 1.04.4 1.4.51.59.19 1.12.16 1.55.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"></path></svg>
+                    Order on WhatsApp
+                </a>
+            </div>
+            <div class="hero_rating">
+                <span class="stars">★★★★★</span>
+                <span>4.9 rated by 2,300+ customers across Pakistan</span>
+            </div>
+        </div>
+        <div class="hero_pic reveal">
+            <img src="hero.png" alt="picture">
+        </div>
+    </div>
+
+    <!-- ================= TRUST STRIP ================= -->
+    <div class="trust_strip reveal">
+        <div class="trust_item">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            <div>
+                <h4>Free Delivery</h4>
+                <p>Across Pakistan</p>
+            </div>
+        </div>
+        <div class="trust_item">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+            <div>
+                <h4>Cash on Delivery</h4>
+                <p>Pay when it arrives</p>
+            </div>
+        </div>
+        <div class="trust_item">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+                <h4>Easy Returns</h4>
+                <p>7-day exchange</p>
+            </div>
+        </div>
+        <div class="trust_item">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"></path></svg>
+            <div>
+                <h4>Premium Fabric</h4>
+                <p>Handpicked quality</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Category (rendered by JS from products-data.js) ================= -->
+    <section class="shop-section shop-light">
+        <div class="cat_tag1 reveal">
+            <span class="eyebrow center">The Edit</span>
+            <h1>Shop By Category</h1>
+        </div>
+        <div class="cat_row1" id="shopByCategoryContainer"></div>
+    </section>
+
+    <!-- ================= Bestsellers (rendered by JS) ================= -->
+    <section class="shop-section shop-dark">
+        <div class="cat_tag1 reveal">
+            <span class="eyebrow center">Bestsellers</span>
+            <h1>Most Selling Item</h1>
+        </div>
+        <div class="cat2-row" id="bestSellersContainer"></div>
+    </section>
+
+    <!-- ================= mendeals ================= -->
+    <div class="mendeal" id="sale">
+        <div class="mendeal_card reveal">
+            <div class="mendeal_text">
+                <span class="eyebrow">The Final Sale</span>
+                <h1>FLASH SELL</h1>
+                <h1>ON MEN COLLECTION</h1>
+                <h3>Elevate Your Buying Experience</h3>
+                <button>Shop Now</button>
+            </div>
+            <div class="mendeal_pic">
+                <img src="hero2.png" alt="pic">
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Trending Now (rendered by JS) ================= -->
+    <section class="shop-section shop-light">
+        <div class="cat_tag1 reveal">
+            <span class="eyebrow center">Trending Now</span>
+            <h1>Loved By Everyone</h1>
+        </div>
+        <div class="cat_row1" id="trendingNowContainer"></div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <div class="testimonials">
+        <div class="cat_tag1 reveal">
+            <span class="eyebrow center">What Customers Say</span>
+            <h1>Trusted By Pakistan</h1>
+        </div>
+        <div class="testimonial_row">
+            <div class="testimonial_card reveal">
+                <span class="stars">★★★★★</span>
+                <p>"Fabric quality is next level and the fit was exactly as shown. Ordering again."</p>
+                <h5>— Ahmed R., Lahore</h5>
+            </div>
+            <div class="testimonial_card reveal">
+                <span class="stars">★★★★★</span>
+                <p>"Delivery was fast and the abaya stitching feels premium. Worth every rupee."</p>
+                <h5>— Sana K., Multan</h5>
+            </div>
+            <div class="testimonial_card reveal">
+                <span class="stars">★★★★★</span>
+                <p>"COD made it easy to trust the brand first time. Now a regular customer."</p>
+                <h5>— Bilal H., Karachi</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NEWSLETTER STRIP ================= -->
+    <div class="newsletter reveal">
+        <div class="newsletter_text">
+            <span class="eyebrow">Stay In The Loop</span>
+            <h2>Join The LIBAAS List</h2>
+            <p>New drops, private sales and styling notes — straight to your inbox.</p>
+        </div>
+        <form class="newsletter_form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_col footer_brand">
+                <h2>LIBAAS</h2>
+                <p>Premium fabrics, considered fits, and everyday luxury — designed in Pakistan for the way you actually dress.</p>
+                <div class="footer_social">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="TikTok">TT</a>
+                    <a href="#" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+
+            <div class="footer_col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men Shirts</a></li>
+                    <li><a href="#">Men Jeans</a></li>
+                    <li><a href="#">Women Shirts</a></li>
+                    <li><a href="#">Women Abaya</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns &amp; Exchange</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li>Multan, Pakistan</li>
+                    <li>+92 300 0000000</li>
+                    <li>support@libaas.pk</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p>&copy; <span id="year"></span> LIBAAS. All rights reserved.</p>
+            <p>Crafted with care in Multan. <a href="admin.html" class="admin_link">Admin Login</a></p>
+        </div>
+    </footer>
+
+    <!-- ================= TOAST ================= -->
+    <div class="toast" id="toast">Added to cart</div>
+
+    <!-- ================= CART DRAWER ================= -->
+    <div class="cart_overlay" id="cartOverlay"></div>
+    <aside class="cart_drawer" id="cartDrawer">
+        <div class="cart_drawer_header">
+            <h3>Your Cart</h3>
+            <button class="cart_close" id="cartClose" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart_drawer_body" id="cartItems">
+            <p class="cart_empty" id="cartEmpty">Your cart is empty. Start adding items you love.</p>
+        </div>
+        <div class="cart_drawer_footer">
+            <div class="cart_subtotal">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">Rs. 0</span>
+            </div>
+            <button class="cart_checkout" id="cartCheckout">Place Order</button>
+        </div>
+    </aside>
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+    <div class="modal_overlay" id="checkoutOverlay"></div>
+    <div class="modal checkout_modal" id="checkoutModal">
+        <div class="modal_header">
+            <h3>Complete Your Order</h3>
+            <button class="modal_close" id="checkoutClose">&times;</button>
+        </div>
+        <form class="modal_body" id="checkoutForm">
+            <label>Full Name</label>
+            <input type="text" id="custName" placeholder="Your full name" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="custPhone" placeholder="03XX-XXXXXXX" required>
+
+            <label>Delivery Address</label>
+            <input type="text" id="custAddress" placeholder="House #, Street, Area" required>
+
+            <label>City</label>
+            <input type="text" id="custCity" placeholder="Multan" required>
+
+            <label>Payment Method</label>
+            <div class="payment_methods">
+                <label class="payment_option">
+                    <input type="radio" name="paymentMethod" value="COD" checked>
+                    <span class="payment_option_label">
+                        <strong>Cash on Delivery</strong>
+                        <small>Pay when your order arrives</small>
+                    </span>
+                </label>
+                <label class="payment_option">
+                    <input type="radio" name="paymentMethod" value="JazzCash">
+                    <span class="payment_option_label">
+                        <strong>JazzCash</strong>
+                        <small>Pay via JazzCash mobile account</small>
+                    </span>
+                </label>
+                <label class="payment_option">
+                    <input type="radio" name="paymentMethod" value="Easypaisa">
+                    <span class="payment_option_label">
+                        <strong>Easypaisa</strong>
+                        <small>Pay via Easypaisa mobile account</small>
+                    </span>
+                </label>
+            </div>
+
+            <div class="payment_instructions" id="paymentInstructions" style="display:none;">
+                <p id="paymentInstructionsText"></p>
+                <label>Transaction ID / Reference Number</label>
+                <input type="text" id="custTxnId" placeholder="e.g. 123456789012">
+            </div>
+
+            <div class="checkout_summary" id="checkoutSummary"></div>
+
+            <div class="modal_actions">
+                <button type="button" class="btn_cancel" id="cancelCheckout">Cancel</button>
+                <button type="submit" class="btn_save">Confirm Order</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ================= ORDER CONFIRMATION MODAL ================= -->
+    <div class="modal_overlay" id="confirmOverlay"></div>
+    <div class="modal modal_small" id="confirmModal">
+        <div class="modal_header">
+            <h3>Order Placed 🎉</h3>
+        </div>
+        <div class="modal_body">
+            <p class="delete_text">Thank you! Your order <strong id="confirmOrderId"></strong> has been received. Our team will contact you shortly to confirm delivery.</p>
+            <div class="modal_actions">
+                <button type="button" class="btn_save" id="closeConfirm" style="flex:1;">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= AUTH MODAL (Login / Register) ================= -->
+    <div class="modal_overlay" id="authOverlay"></div>
+    <div class="modal" id="authModal">
+        <div class="modal_header">
+            <h3 id="authModalTitle">Login</h3>
+            <button class="modal_close" id="authClose">&times;</button>
+        </div>
+        <div class="auth_tabs">
+            <button class="auth_tab active" data-auth-tab="login">Login</button>
+            <button class="auth_tab" data-auth-tab="register">Create Account</button>
+        </div>
+        <p class="auth_gate_message" id="authGateMessage" style="display:none;"></p>
+
+        <form class="modal_body" id="loginForm">
+            <label>Email</label>
+            <input type="email" id="loginEmail" placeholder="you@example.com" required>
+            <label>Password</label>
+            <input type="password" id="loginPassword" placeholder="Your password" required>
+            <p class="auth_error" id="loginFormError"></p>
+            <div class="modal_actions">
+                <button type="submit" class="btn_save" style="flex:1;">Login</button>
+            </div>
+        </form>
+
+        <form class="modal_body" id="registerForm" style="display:none;">
+            <label>Full Name</label>
+            <input type="text" id="registerName" placeholder="Your name" required>
+            <label>Email</label>
+            <input type="email" id="registerEmail" placeholder="you@example.com" required>
+            <label>Password</label>
+            <input type="password" id="registerPassword" placeholder="Choose a password" required minlength="6">
+            <p class="auth_error" id="registerFormError"></p>
+            <div class="modal_actions">
+                <button type="submit" class="btn_save" style="flex:1;">Create Account</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ================= CHAT WIDGET ================= -->
+    <div class="chat_widget">
+        <div class="chat_panel" id="chatPanel">
+            <div class="chat_panel_header">
+                <div>
+                    <h4>Chat with LIBAAS</h4>
+                    <span>We usually reply within a few hours</span>
+                </div>
+                <button class="chat_panel_close" id="chatPanelClose">&times;</button>
+            </div>
+            <div class="chat_messages" id="chatMessages"></div>
+            <form class="chat_input_row" id="chatForm">
+                <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off" required>
+                <button type="submit" aria-label="Send message">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </form>
+        </div>
+        <button class="chat_toggle" id="chatToggle" aria-label="Open chat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span class="chat_badge" id="chatBadge"></span>
+        </button>
+    </div>
+
+    <!-- ================= BACK TO TOP ================= -->
+    <button class="back_top" id="backTop" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+
+    <script src="auth-config.js"></script>
+    <script src="products-data.js"></script>
+    <script src="orders-data.js"></script>
+    <script src="customers-data.js"></script>
+    <script src="chat-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
